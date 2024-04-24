@@ -5,13 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3006",
     "lint": "next lint"
   },
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.2"
+    "next": "^v14.3.0-canary.18"
   },
   "devDependencies": {
     "typescript": "^5",
