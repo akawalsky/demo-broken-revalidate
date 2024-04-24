@@ -11,7 +11,6 @@ export const runtime = "edge";
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
     const body: Body = await req.json();
-    // Check for secret to confirm this is a valid request
     if (body.tags) {
         console.log("Revalidating tags", body.tags);
         body.tags.forEach((tag) => revalidateTag(tag));
